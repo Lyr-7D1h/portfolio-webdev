@@ -39,12 +39,12 @@ const typeEffect = (el, lineEnabled) => {
 */
 $(document).ready(() => {
     $("#title_sub").hide();
-    $("scroll").hide();
-    // $("body").css("overflow", "hidden");
+    $(".chevron").hide();
     $("main").hide();
     $("footer").hide();
     typeEffect($("#title"), false).then(() => {
         $("#title_sub").show();
+        $(".chevron").show();
         typeEffect($("#title_sub"), false);
     });
 });
