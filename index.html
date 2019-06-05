@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="A website made by Ivo Velthoven"> <!--Description for SEO-->
-    <meta name="keywords" content="portfolio,ivelthoven,Ivo Velthoven"> <!--Key Words for SEO-->
+    <meta name="description" content="A website made by Ivo Velthoven">
+    <meta name="keywords" content="portfolio,ivelthoven,Ivo Velthoven">
     <meta name="author" content="Ivo Velthoven">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IVelthoven</title>
@@ -13,22 +14,18 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+
+<body style="position: relative;" data-spy="scroll" data-target="#navbar">
     <header>
         <div id="particles-js"></div>
         <div class="d-flex justify-content-center align-middle position-absolute" style="transform: translate(-50%,-80%); color:rgb(250,250,250); left: 50%; top:50%;">
             <h1 id="title">IVelthoven</h1>
-            <h4 id="title_sub">Web Developer</h4>
-        </div>
-        <div id="scroll" class="d-flex justify-content-center align-middle position-absolute" style="transform: translate(-50%,-80%); color:rgb(250,250,250); left: 50%; top:80%;">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
+            <h4 id="title_sub">Freelance Web Developer</h4>
         </div>
     </header>
-    
+
     <main>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+        <nav id="navbar" class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
             <ul class="navbar-nav">
                 <li class="navbar-brand">
                     <h3>IVelthoven</h3>
@@ -41,34 +38,78 @@
                 </li>
             </ul>
         </nav>
-    
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-3">Ivo Velthoven</h1>
-                <p class="lead"></p>
-                <hr class="my-2">
-                <p>Developing websites and web applications since 2017</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Get a Website!</a>
-                </p>
-            </div>
-        </div>
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-3">Ivo Velthoven</h1>
-                    <p class="lead"></p>
-                    <hr class="my-2">
-                    <p>Developing websites and web applications since 2017</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Get a Website!</a>
-                    </p>
+        <div id="about">
+            <section class="fade-in">
+                <div class="jumbotron-fluid">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="jumbotron text-box">
+                                    <h2>What is IVelthoven?</h2>
+                                    <p>IVelthoven.nl is my portfolio and the name I use for all profesional projects aswell as for my email enc.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid" src="./resources/my_logo.png" alt="IVelthoven Logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section class="fade-in">
+                <div class="jumbotron-fluid">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <img class="img-fluid" src="./resources/html_code.jpg" alt="IVelthoven Logo">
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="jumbotron text-box">
+                                    <h2>What do I do?</h2>
+                                    <p>
+                                        I make websites and web applications. 
+                                        All programmed and designed from scratch, for a very custom look and feel, by someone who knows what he is doing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="projects">
+            <section class="fadeIn">
+                <div class="jumbotron"></div>
+            </section>
+        </div>
+        <div id="contact">
+            <section class="fadeIn">
+                <div class="jumbotron">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        
     </main>
-    
+
     <footer class="page-footer font-small blue">
         <div class="footer-copyright text-center py-3">© 2019 Copyright
-          <a href="https://ivelthoven.nl"> Ivo Velthoven</a>
+            <a href="https://ivelthoven.nl"> Ivo Velthoven</a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/46e27c5ab1.js"></script>
@@ -78,4 +119,5 @@
     <script src="./js/particles.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
