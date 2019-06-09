@@ -39,7 +39,6 @@ const checkFadeIn = () => {
     $(".fade-in").each((i, el) => {
         let bottom_of_object = $(el).offset().top + 100;// 100 to delay fadeIn effect on scroll   if fully on page: + $(el).outerHeight();
         let bottom_of_window = $(window).scrollTop() + $(window).height();
-        console.log(bottom_of_object, bottom_of_window)
         if( bottom_of_window > bottom_of_object ){
             $(el).css("opacity", "1");
         }

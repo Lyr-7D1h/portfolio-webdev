@@ -17,7 +17,8 @@
 
 <body style="position: relative;" data-spy="scroll" data-target="#navbar">
     <header>
-        <div id="particles-js"></div>
+        <div id="particles-js" class="header-background"></div>
+        <!-- <div id="particles-js"></div> -->
         <div class="d-flex justify-content-center align-middle position-absolute" style="transform: translate(-50%,-80%); color:rgb(250,250,250); left: 50%; top:50%;">
             <h1 id="title">IVelthoven</h1>
             <h4 id="title_sub">Freelance Web Developer</h4>
@@ -26,30 +27,40 @@
 
     <main>
         <nav id="navbar" class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav jumbotron-fluid" style="width: 100%;">
                 <li class="navbar-brand">
                     <h3>IVelthoven</h3>
                 </li>
                 <li class="navbar-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#website">Website</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="navbar-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
+                <li class="navbar-text">
+                    hi@ivelthoven.nl
+                </li>
             </ul>
         </nav>
-        <div id="about">
+        
+        <div id="website">
             <section class="fade-in">
                 <div class="jumbotron-fluid">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-5 d-flex justify-content-end">
                                 <div class="jumbotron text-box">
                                     <h2>What is IVelthoven?</h2>
-                                    <p>IVelthoven.nl is my portfolio and the name I use for all profesional projects aswell as for my email enc.</p>
+                                    <p>IVelthoven.nl is my portfolio and the name I use for all professional projects as well as for my email enc.</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-7">
                                 <img class="img-fluid" src="./resources/my_logo.png" alt="IVelthoven Logo">
                             </div>
                         </div>
@@ -58,17 +69,18 @@
             </section>
             <section class="fade-in">
                 <div class="jumbotron-fluid">
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row">
                             <div class="col-sm-7">
                                 <img class="img-fluid" src="./resources/html_code.jpg" alt="IVelthoven Logo">
                             </div>
                             <div class="col-sm-5">
                                 <div class="jumbotron text-box">
-                                    <h2>What do I do?</h2>
+                                    <h2>What can I do here?</h2>
                                     <p>
-                                        I make websites and web applications. 
-                                        All programmed and designed from scratch, for a very custom look and feel, by someone who knows what he is doing.
+                                        Here you can contact me, find more information about what I do and who I am, and see what my abilities are by taking this website as an example. 
+                                        <!-- I make websites and web applications. 
+                                        All programmed and designed from scratch, for a very custom look and feel, by someone who knows what he is doing. -->
                                     </p>
                                 </div>
                             </div>
@@ -76,30 +88,117 @@
                     </div>
                 </div>
             </section>
+            <div class="spacing"></div>
+        </div>
+        <div id="about">
+            <section class="fade-in dark">
+                <div class="spacing dark"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-7 d-flex justify-content-end">
+                            <div class="jumbotron text-box">
+                                <h2>Hi I'm Ivo</h2>
+                                <p>
+                                    My interest to technology started on my 15th and has only grown since then. 
+                                    I try to stay up to date and learn as much as possible in this field.
+                                    Programming is my hobby and I made it my work, this gives me inspiration and motivation to create for a living.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-5" style="text-align: center">
+                            <img class="img-fluid" src="./resources/0.jpg" alt="IVelthoven Logo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="key-values" class="fade-in container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="jumbotron text-box">
+                            <i class="fas fa-brain"></i>
+                            <br>
+                            <h2>Open Minded</h2>
+                            <p>Open mindedness is very important to me. I feel like if everyone was open minded we would have a more progressive and happier world. </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jumbotron text-box">
+                            <i class="fas fa-comments"></i>
+                            <h2>Informal</h2>
+                            <p>I can be formal when it is expected of me, but honestly I really prefer an informal environment where you can be your true self. </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jumbotron text-box">
+                            <i class="fas fa-hiking"></i>
+                            <h2>Spontaneous</h2>
+                            <p>I like doing new things. I can get a lot of energy from doing new and spontaneous things.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="spacing"></div>
         </div>
         <div id="projects">
-            <section class="fadeIn">
-                <div class="jumbotron"></div>
+            <div class="spacing-small"></div>
+            <section class="fade-in">
+                <div class="jumbotron-fluid d-flex justify-content-center">
+                    <div class="col-sm-6 jumbotron" style="text-align: center; background-color: white;">
+                        <h2>Projects</h2>
+                        <p>I've made many personal websites or for small projects I've been involved in. You can see those projects at my subdomain, there you can find links to deployed projects and repositories.</p>
+                        <br>
+                        <a href="https://projects.ivelthoven.nl/" target="_blank" role="button" class="btn btn-secondary">View Projects <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </section>
+            <div class="spacing-small"></div>
         </div>
         <div id="contact">
-            <section class="fadeIn">
-                <div class="jumbotron">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <section class="fade-in">
+                <div class="container">
+                    <div class="jumbotron-fluid d-flex justify-content-center">
+                        <div class="col-sm-8" style="text-align: center;">
+                            <h2 style="text-align: center">Contact</h2>
+                            <p>Are you interested in working with me to create something beautiful or just have a few questions for me? Feel free to get in contact with me! This form will send an email to <a>hi@ivelthoven.nl</a></p>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>  
+                    <br>
+                    <form action="https://formsubmit.co/hi@ivelthoven.nl" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                            <label for="firstname">Firstname*</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Firstname" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                            <label for="lastname">Lastname*</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" required>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email*</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" name="city" id="city">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="country">Country</label>
+                                <input type="text" class="form-control" name="country" id="country">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="message">Message*</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn btn-primary w-50"><i class="fas fa-paper-plane"></i> Send</button>
+                        </div>
                     </form>
                 </div>
             </section>

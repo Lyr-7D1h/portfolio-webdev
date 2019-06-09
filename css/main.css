@@ -23,13 +23,37 @@ li {
     list-style-type: none;
 }
 
-#particles-js {
+/* #particles-js {
     height: 100vh;
     width: 100vw;
-}
+    top: 0;
+    position: absolute;
+} */
 
+.header-card {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px black;  
+}
+.header-background {
+    background-image: url("../resources/bright_mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(10px);  */
+    filter: brightness(30%);
+    transform: scale(1.1);
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 header {
     height: 100vh;
+    width: 100vw;
     background-color: black;
     position: fixed;
     top: 0;
@@ -55,7 +79,7 @@ footer {
 }
 
 div.jumbotron {
-    background-color: white;
+    background: none;
     max-width: 25rem;
 }
 
@@ -68,9 +92,56 @@ div.jumbotron {
     max-width: 25rem;
 }
 
+.dark {
+    background-color: #25292e;
+    color: white;
+    background-attachment: fixed;
+}
+.dark p {
+    color: lightgrey;
+}
+#key-values .text-box {
+    text-align: center;
+}
+#about i {
+    font-size: 10vw;
+    margin-bottom: 20px;
+}
+
+.spacing {
+    height: 25vh;
+}
+.spacing-small {
+    height: 15vh;
+}
+.navbar-text {
+    width: 100%;
+    text-align: end;
+    float: right;
+    position: relative;
+    right: 0;
+}
+
+/* #about {
+    background-image: url("../resources/black_white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+#projects {
+    background-image: url("../resources/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 
 @media screen and (max-width: 600px) {
   .navbar-item {
+    display: none;
+  }
+  ul .navbar-text {
     display: none;
   }
 }
