@@ -4,5 +4,6 @@
       { "src": "**/*.js", "use": "@now/static" },
       { "src": "**/*.css", "use": "@now/static" },
       { "src": "resources/*", "use": "@now/static" }
-    ]
+    ],
+    "alias": "ivelthoven.nl"
 }
