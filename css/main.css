@@ -115,11 +115,8 @@ div.jumbotron {
     height: 15vh;
 }
 .navbar-text {
-    width: 100%;
-    text-align: end;
-    float: right;
-    position: relative;
-    right: 0;
+    position: absolute;
+    right: 10px;
 }
 
 /* #about {
