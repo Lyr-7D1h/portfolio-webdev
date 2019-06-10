@@ -1,9 +1,6 @@
 {
     "builds": [
-      { "src": "*.html", "use": "@now/static" },
-      { "src": "**/*.js", "use": "@now/static" },
-      { "src": "**/*.css", "use": "@now/static" },
-      { "src": "resources/*", "use": "@now/static" }
+      { "src": "**/*", "use": "@now/static" }
     ],
     "alias": "ivelthoven.nl"
 }
