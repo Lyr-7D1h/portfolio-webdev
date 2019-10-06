@@ -22,16 +22,10 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      $("main").hide();
-      $("header").hide();
-      $("nav").hide();
-    </script>
   </head>
 
   <body style="position: relative;" data-spy="scroll" data-target="#navbar">
-    <div class="loader"></div>
+    <div style="display: none" class="loader"></div>
 
     <header>
       <div id="particles-js" class="header-background"></div>
@@ -41,6 +35,10 @@
       >
         <h1 id="title">IVelthoven</h1>
         <h4 id="title_sub">Just a developer</h4>
+        <script>
+          $("#title").hide();
+          $("#title_sub").hide();
+        </script>
       </div>
     </header>
 
@@ -323,6 +321,12 @@
         </section>
       </div>
     </main>
+    <script>
+      $(".loader").show();
+      $("main").hide();
+      $("header").hide();
+      $("nav").hide();
+    </script>
 
     <footer class="page-footer font-small blue">
       <div class="footer-copyright text-center py-3">
@@ -347,8 +351,10 @@
     <script>
       $(window).on("load", function() {
         $(".loader").fadeOut();
-        $("main").fadeIn();
-        $("header").fadeIn();
+        $("main").show();
+        $("header").show();
+        $("nav").show();
+        $("#title").show();
       });
     </script>
   </body>
