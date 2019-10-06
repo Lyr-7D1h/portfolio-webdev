@@ -1,11 +1,25 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
+.loader {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+.loader > * {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
 
 /* h1, h2, h3, h4, h5, h6, p, li
 li h3 {
@@ -13,14 +27,17 @@ li h3 {
 } */
 
 h1:hover,
-h4:hover, h3:hover, h2:hover, p:hover {
-    cursor: default;
+h4:hover,
+h3:hover,
+h2:hover,
+p:hover {
+  cursor: default;
 }
 p {
-    color: rgb(100,100,100);
+  color: rgb(100, 100, 100);
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* #particles-js {
@@ -31,92 +48,92 @@ li {
 } */
 
 .header-card {
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    /* border: 2px solid black; */
-    box-shadow: 0px 0px 5px black;  
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* border: 2px solid black; */
+  box-shadow: 0px 0px 5px black;
 }
 .header-background {
-    background-image: url("../resources/bright_mountains.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* filter: blur(10px);  */
-    filter: brightness(30%);
-    transform: scale(1.1);
-    z-index: -5;
-    width: 100%;
-    height: 100%;
-    position: relative;
+  background-image: url("../resources/bright_mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* filter: blur(10px);  */
+  filter: brightness(30%);
+  transform: scale(1.1);
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 header {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: -1;
 }
 
 main {
-    margin-top: 100vh;
-    background-color: white;
+  margin-top: 100vh;
+  background-color: white;
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 footer {
-    background-color: white;
+  background-color: white;
 }
 
 #title {
-    margin-right: 10%;
+  margin-right: 10%;
 }
 
 div.jumbotron {
-    background: none;
-    max-width: 25rem;
+  background: none;
+  max-width: 25rem;
 }
 
 .fade-in {
-    opacity: 0;
-    transition-duration: 1.5s;
+  opacity: 0;
+  transition-duration: 1.5s;
 }
 
 .text-box {
-    max-width: 25rem;
+  max-width: 25rem;
 }
 
 .dark {
-    background-color: #25292e;
-    color: white;
-    background-attachment: fixed;
+  background-color: #25292e;
+  color: white;
+  background-attachment: fixed;
 }
 .dark p {
-    color: lightgrey;
+  color: lightgrey;
 }
 #key-values .text-box {
-    text-align: center;
+  text-align: center;
 }
 #about i {
-    font-size: 10vw;
-    margin-bottom: 20px;
+  font-size: 10vw;
+  margin-bottom: 20px;
 }
 
 .spacing {
-    height: 25vh;
+  height: 25vh;
 }
 .spacing-small {
-    height: 15vh;
+  height: 15vh;
 }
 .navbar-text {
-    position: absolute;
-    right: 10px;
+  position: absolute;
+  right: 10px;
 }
 
 /* #about {
@@ -126,13 +143,11 @@ div.jumbotron {
     background-attachment: fixed;
 } */
 #projects {
-    background-image: url("../resources/background.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url("../resources/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .navbar-item {
