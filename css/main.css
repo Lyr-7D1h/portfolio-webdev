@@ -107,6 +107,7 @@ div.jumbotron {
 
 .text-box {
   max-width: 25rem;
+  margin: 0 auto;
 }
 
 .dark {
